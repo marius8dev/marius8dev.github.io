@@ -52,8 +52,7 @@ body{
 	line-height: 30px;
 }
 
-#calculator div button,
-#calculator div button:focus {
+#calculator div button {
 	width: 100%;
 	height: 100%;
 	padding: 20px;
@@ -66,26 +65,30 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
-#calculator div button:hover {
-	background-color: #232321;
-}
-
-#calculator div button[data-el="="],
-#calculator div button[data-el="="]:focus {
+#calculator div button[data-el="="] {
 	background-color: #d82631;
 	color: #ffffff;
 }
-#calculator div button[data-el="="]:hover {
+
+#calculator div button[data-el="c"] {
 	background-color: #ffffff;
 	color: #0c0c0c;
 }
 
-#calculator div button[data-el="c"],
-#calculator div button[data-el="c"]:focus {
-	background-color: #ffffff;
-	color: #0c0c0c;
-}
-#calculator div button[data-el="c"]:hover {
-	background-color: #d82631;
-	color: #ffffff;
+@media only screen and (min-width: 1366px){
+
+	#calculator div button:hover {
+		background-color: #232321;
+	}
+
+	#calculator div button[data-el="="]:hover {
+		background-color: #ffffff;
+		color: #0c0c0c;
+	}
+
+	#calculator div button[data-el="c"]:hover {
+		background-color: #d82631;
+		color: #ffffff;
+	}
+
 }
