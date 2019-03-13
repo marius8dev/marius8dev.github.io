@@ -52,7 +52,8 @@ body{
 	line-height: 30px;
 }
 
-#calculator div button {
+#calculator div button
+#calculator div button:focus {
 	width: 100%;
 	height: 100%;
 	padding: 20px;
@@ -69,7 +70,8 @@ body{
 	background-color: #232321;
 }
 
-#calculator div button[data-el="="] {
+#calculator div button[data-el="="],
+#calculator div button[data-el="="]:focus {
 	background-color: #d82631;
 	color: #ffffff;
 }
@@ -78,7 +80,8 @@ body{
 	color: #0c0c0c;
 }
 
-#calculator div button[data-el="c"] {
+#calculator div button[data-el="c"],
+#calculator div button[data-el="c"]:focus {
 	background-color: #ffffff;
 	color: #0c0c0c;
 }
